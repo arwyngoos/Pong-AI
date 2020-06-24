@@ -25,7 +25,7 @@ if player_information.ai_player:
 
 if record_data:
     file_name = Helper.random_string()
-    sample_data = open(r"C:\Arwyn\Coding\Squash Pong\{}.csv".format(file_name), "w")
+    sample_data = open(r"C:\Arwyn\Coding\Squash Pong\Training Data\{}.csv".format(file_name), "w")
     print("x, y, vx, vy, Paddle.y, paddle_position", file=sample_data)
 
 screen, ball, paddle_player, paddle_ai, clock = Helper.initialize(

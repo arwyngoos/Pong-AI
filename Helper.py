@@ -99,7 +99,7 @@ def random_string(string_length=8):
 
 def get_pong_data_for_training(player_information):
     game_observations_dictionary = {}
-    path = r"C:\Arwyn\Coding\Squash Pong\*.csv"
+    path = r"C:\Arwyn\Coding\Squash Pong\Training Data\*.csv"
     for file_name in glob.glob(path):
         try:
             game_observations_dictionary[file_name] = pd.read_csv(file_name)
